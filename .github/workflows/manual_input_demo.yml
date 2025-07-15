@@ -13,6 +13,13 @@ on:
         type: number
         required: true
         default: '0'
+      gender:
+        description: "Gender of the user"
+        type: choice
+        options:
+          - Male
+          - Female
+          - Trans
 
 jobs:
   manual_input_demo:
@@ -24,3 +31,5 @@ jobs:
         # run: echo "Hello, ${{ github.events.inputs.name }}"
       - name: Age
         run: echo "My age is ${{ github.event.inputs.age }}"
+      - name: Age
+        run: echo "I am a ${{ github.event.inputs.gender }}"
