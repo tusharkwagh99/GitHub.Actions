@@ -5,8 +5,14 @@ on:
     inputs:
       name:
         description: "Name for manual input"
+        type: string
         required: false
         default: 'Tushar'
+      age:
+        description: "Age of the user"
+        type: number
+        required: true
+        default: '0'
 
 jobs:
   manual_input_demo:
@@ -16,3 +22,5 @@ jobs:
       - name: Greetings
         run: echo "Hello, ${{ inputs.name }}"
         # run: echo "Hello, ${{ github.events.inputs.name }}"
+      - name: Age
+        run: echo "My Age is, ${{ github.events.inputs.age }}"
