@@ -15,3 +15,4 @@ jobs:
     steps:
       - name: Greetings
         run: echo "Hello, ${{ inputs.name }}"
+        # run: echo "Hello, ${{ github.events.inputs.name }}"
