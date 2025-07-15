@@ -39,5 +39,4 @@ jobs:
         run: echo "I am a ${{ github.event.inputs.gender }}"
         
       - name: Marrital Status
-        run: echo "Married: ${{ github.event.inputs.marrital_status}}"
-        
+        run: echo "Married: ${{ github.event.inputs.marrital_status }}"
