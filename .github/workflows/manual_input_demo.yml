@@ -1,19 +1,17 @@
-name: Hello World with Manula Input
+name: Hello World with Manual Input
 
 on:
   workflow_dispatch:
-    input: 
+    inputs:
       name:
         description: "Name for manual input"
-        type: string
+        required: false
         default: 'Tushar'
 
 jobs:
-    manula_input_demo:
-      runs-on: ubuntu-latest
+  manual_input_demo:
+    runs-on: ubuntu-latest
 
-      steps:
-        - name: Greetings
-          run: echo "Hello World"
-
-    
+    steps:
+      - name: Greetings
+        run: echo "Hello, ${{ github.event.inputs.name }}"
