@@ -22,7 +22,7 @@ on:
           - Trans
       marrital_status:
         description: "Marrital status of the user"
-        type: boolien
+        type: boolean
       
 
 jobs:
