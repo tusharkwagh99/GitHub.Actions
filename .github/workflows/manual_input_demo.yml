@@ -23,4 +23,4 @@ jobs:
         run: echo "Hello, ${{ inputs.name }}"
         # run: echo "Hello, ${{ github.events.inputs.name }}"
       - name: Age
-        run: echo "My Age is, ${{ github.events.inputs.age }}"
+        run: echo "My age is ${{ github.event.inputs.age }}"
