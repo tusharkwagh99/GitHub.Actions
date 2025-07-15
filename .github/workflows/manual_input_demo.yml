@@ -31,7 +31,6 @@ jobs:
     steps:
       - name: Greetings
         run: echo "Hello, ${{ github.event.inputs.name }}"
-        # run: echo "Hello, ${{ inputs.name }}"
         
       - name: Age
         run: echo "My age is ${{ github.event.inputs.age }}"
