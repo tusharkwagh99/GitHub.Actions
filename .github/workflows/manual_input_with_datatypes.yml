@@ -1,4 +1,4 @@
-name: Hello World with Manual Input
+name: Manual Input Demo with Datatypes
 
 on:
   workflow_dispatch:
