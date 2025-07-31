@@ -2,16 +2,14 @@ name: Schedule Workflow Demo
 
 on:
   workflow_dispatch:
-    schedule:
-      - cron: '*/1 * * * *'
+  schedule:
+    - cron: '*/1 * * * *'
+
 jobs:
   demo:
     runs-on: ubuntu-latest
-
     steps:
-      - name:
+      - name: Print current date and time
         run: |
           current_date_time=$(date)
           echo "Current date and time is: $current_date_time"
-          
-        
