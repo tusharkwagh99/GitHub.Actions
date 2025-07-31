@@ -1,0 +1,17 @@
+name: Manual Input Demo with Datatypes
+
+on:
+  workflow_dispatch:
+    schedule:
+      - cron: '*/10 * * * *'
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name:
+        run:
+          current_date_time=$(date)
+          echo "Current date and time is: $current_date_time"
+          
+        
